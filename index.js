@@ -115,19 +115,19 @@ const movieTemplate = movieDetail => {
       </div>
     </article>
     <article>
-    <article data-value=${dollars} class ="notification is-primary">
-      <p class="title">${movieDetail.BoxOffice}</p>
-      <p class="subtitle">BoxOffice</p>
-    </article>
-    <article>
     <article data-value=${imdbRating} class ="notification is-primary">
       <p class="title">${movieDetail.imdbRating}</p>
       <p class="subtitle">IMDB Rating</p>
     </article>
     <article>
-    <article data-value=${imdbVotes} class ="notification is-primary">
-      <p class="title">${movieDetail.imdbVotes}</p>
-      <p class="subtitle">IMDB Votes</p>
+    <article data-value=${metascore} class ="notification is-primary">
+      <p class="title">${movieDetail.Metascore}</p>
+      <p class="subtitle">Metascore</p>
+    </article>
+    <article>
+    <article data-value=${dollars} class ="notification is-primary">
+      <p class="title">${movieDetail.BoxOffice}</p>
+      <p class="subtitle">BoxOffice</p>
     </article>
     <article>
     <article data-value=${awards} class ="notification is-primary">
@@ -135,9 +135,9 @@ const movieTemplate = movieDetail => {
       <p class="subtitle">Awards</p>
     </article>
     <article>
-    <article data-value=${metascore} class ="notification is-primary">
-      <p class="title">${movieDetail.Metascore}</p>
-      <p class="subtitle">Metascore</p>
-    </article>
+    <article data-value=${imdbVotes} class ="notification is-primary">
+      <p class="title">${movieDetail.imdbVotes}</p>
+      <p class="subtitle">IMDB Votes</p>
+    </article>  
     `;
 }
